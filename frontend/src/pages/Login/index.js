@@ -77,6 +77,7 @@ const Login = () => {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
+        <img src="buddylogo.png" alt=""/>
         <Avatar className={classes.avatar}>
           <LockOutlined />
         </Avatar>

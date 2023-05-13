@@ -140,7 +140,7 @@ const MainListItems = (props) => {
 
 <ListItemLink
               to="/BulkMessage"
-              primary="Bulk Message"
+              primary="Envio em massa"
               icon={<ChatBubbleOutlineOutlined />}
             />
 

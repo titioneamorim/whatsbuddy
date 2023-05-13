@@ -65,21 +65,12 @@ const Chat = () => {
   const classes = useStyles();
   const { ticketId } = useParams();
 
-  return (
+   return (
     <div className={classes.chatContainer}>
       <div className={classes.chatPapper}>
         <Grid container spacing={0}>
           {/* <Grid item xs={4} className={classes.contactsWrapper}> */}
-          <Grid
-            item
-            xs={12}
-            md={4}
-            className={
-              ticketId ? classes.contactsWrapperSmall : classes.contactsWrapper
-            }
-          >
-            <TicketsManager />
-          </Grid>
+          
           <Grid item xs={12} md={8} className={classes.messagessWrapper}>
             {/* <Grid item xs={8} className={classes.messagessWrapper}> */}
             {ticketId ? (
@@ -94,6 +85,16 @@ const Chat = () => {
                 </Paper>
               </Hidden>
             )}
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={4}
+            className={
+              ticketId ? classes.contactsWrapperSmall : classes.contactsWrapper
+            }
+          >
+            <TicketsManager />
           </Grid>
         </Grid>
       </div>
